@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Logger</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Location Logger</h1>
+        <p>Location Logger is a platform that fetches the live location of the user and displays it on ThingSpeak website.</p>
+        <p><strong>NIKESH S</strong></p>
+        <p><strong>21ITR073</strong></p>
+        <p>Cloud Computing Lab Exercise No: 9</p>
+    </header>
+
+    <section class="container">
+        <div class="content">
+            <h2>Get Your Location</h2>
+            <button id="logButton">GET LOCATION</button>
+            <div id="locationData" class="location-info">
+                <h3>Your Location</h3>
+                <p>Latitude: <span id="latitude"></span></p>
+                <p>Longitude: <span id="longitude"></span></p>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Recent Data from ThingSpeak</h2>
+            <div id="thingSpeakData" class="location-info">
+                <h3>ThingSpeak Data</h3>
+                <p>Latitude: <span id="tsLatitude"></span></p>
+                <p>Longitude: <span id="tsLongitude"></span></p>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>ThingSpeak Chart</h2>
+            <div id="thingSpeakChart" class="chart"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
